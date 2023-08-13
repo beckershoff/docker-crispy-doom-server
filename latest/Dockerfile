@@ -1,6 +1,6 @@
 FROM mfrancis95/chocolate-doom-build
 
-RUN git clone -b crispy-doom-6.0.0 --depth 1 https://github.com/fabiangreffrath/crispy-doom && \
+RUN git clone -b crispy-doom-6.0 --depth 1 https://github.com/fabiangreffrath/crispy-doom && \
     cd crispy-doom && ./autogen.sh && make
 
 FROM mfrancis95/chocolate-doom-base
